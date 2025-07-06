@@ -2,15 +2,13 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
-import { Quote, Sparkles } from 'lucide-react';
+import { Sparkles } from 'lucide-react';
 import QuoteCard from './quoteCard';
-import { AuroraText } from './magicui/aurora-text';
-import { Label } from './ui/label';
 import { Input } from './ui/input';
 import quotes from '../lib/quotes.json'
 import { useForm} from 'react-hook-form';
 import { gradients } from '@/lib/gradients';
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from './ui/form';
+import { Form, FormControl, FormField, FormItem, } from './ui/form';
 
 import * as z from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
