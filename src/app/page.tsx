@@ -1,9 +1,10 @@
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
-import { QuteHome } from "./app";
+import QuoteGenerator from "@/components/QuoteGenerator";
 
-export default function Home() {
+
+const Home: React.FC = () => {
   return (
-    <QuteHome/>
+    <QuoteGenerator />
   );
 }
+
+export default Home;
