@@ -3,6 +3,9 @@
 A beautifully crafted quote generator built with modern web technologies. It dynamically generates inspirational quotes with smooth gradients, elegant typography, and a friendly user experience.
 
 ---
+## 🔗 Live Demo
+
+👉 [Quote Generator](https://quote-generator-ali.vercel.app/)
 
 ## 📸 Screenshots
 ### Desktop View
