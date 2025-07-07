@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
-import { Sparkles } from 'lucide-react';
+import { Sparkles, HeartIcon } from 'lucide-react';
 import QuoteCard from './quoteCard';
 import { Input } from './ui/input';
 import quotes from '../lib/quotes.json'
@@ -50,7 +50,8 @@ const QuoteGenerator: React.FC = () => {
   };
 
   const generateQuoteByTopic = (topic: string) => {
-    if (isAnimating) return;
+    try {
+      if (isAnimating) return;
     
     setIsAnimating(true);
     
@@ -85,6 +86,9 @@ const QuoteGenerator: React.FC = () => {
       typeWriter(newQuote.text);
       setIsAnimating(false);
     }, 300);
+    } catch (error) {
+      console.log(error)
+    }
 
   };
 
@@ -173,8 +177,8 @@ const QuoteGenerator: React.FC = () => {
         <QuoteCard isAnimating={isAnimating} isTyping={isTyping} quote={displayText} author={currentQuote.author} category={currentQuote.category} />
         
       </div>
-      <p className="text-center text-sm text-white/70 mt-8">
-  © {new Date().getFullYear()} Quote Generator. Made with <span className="text-red-500">❤️</span> by Ali Ather.
+      <p className="text-center text-sm text-white mt-8 flex justify-center font-mono">
+  © {new Date().getFullYear()} Quote Generator made with <span><HeartIcon className='w-4 h-4 text-white mx-1 mt-[1px]'/></span> by Ali Ather.
 </p>
 
 
