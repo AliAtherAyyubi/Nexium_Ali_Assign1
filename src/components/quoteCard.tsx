@@ -19,8 +19,8 @@ const QuoteCard = ({isAnimating,quote,isTyping,author,category}:ChildProps) => {
             
             <div className="min-h-[120px] flex items-center justify-center">
               <div className="text-2xl md:text-3xl lg:text-4xl font-medium text-white leading-relaxed drop-shadow-md">
-                "{quote}"
-                {isTyping && <span className="animate-pulse">|</span>}
+                &quot;{quote} 
+                {isTyping && <span className="animate-pulse">|</span>}&quot;
                 
               </div>
             </div>
