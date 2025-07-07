@@ -1,4 +1,4 @@
-# ✨ Quote Generator
+# ✨ Quote Generator Web App
 
 A beautifully crafted quote generator built with modern web technologies. It dynamically generates inspirational quotes with smooth gradients, elegant typography, and a friendly user experience.
 
@@ -10,7 +10,10 @@ A beautifully crafted quote generator built with modern web technologies. It dyn
 ### Desktop View
  ![Desktop Screenshot](./screenshots/quote2.png)
 ### Mobile View
-![Mobile Screenshot](./screenshots/mobile.png) 
+<div align="center" >
+<img src="./screenshots/mobile.png" alt="Mobile Screenshot" width="250" />
+</div>
+ 
 ---
 
 ## ⚙️ Tech Stack
@@ -43,3 +46,12 @@ This project is built using the following technologies:
 ```bash
 git clone https://github.com/aliatherayyubi/quote-generator.git
 cd quote-generator
+```
+### 2. Install Dependencies
+
+ pnpm install
+
+### 3. Run the Development Server
+
+npm run dev
+
